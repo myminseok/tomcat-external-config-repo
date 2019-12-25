@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context>
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+    <Resources allowLinking='true'/>
+    <Resource name="jdbc/iip-db"
+      auth="Container"
+      type="javax.sql.DataSource"
+      factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+      maxActive="100"
+      minIdle="10"
+      maxWait="10000"
+      initialSize="10"
+      validationQuery="SELECT 1 FROM DUAL"
+      driverClassName="oracle.jdbc.driver.OracleDriver"
+      defaultAutoCommit="false"
+      username=""
+      password=""
+      url="jdbc:oracle:thin@127.0.0.1:1522:MYDB"
+      testOnBorrow="true"
+      testOnReturn="false"
+      testWhileIdle="true"
+      minEvictableIdleTimeMillis="3600000"
+      timeBetweenEvictionRunsMillis="10000"
+      />
+

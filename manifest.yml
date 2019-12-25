@@ -1,0 +1,9 @@
+---
+applications:
+- name: tomcat-external-config-repo
+  memory: 256M
+  instances: 1
+  buildpacks:
+    - staticfile_buildpack
+  routes:
+  - route: tomcat-external-config-repo.apps.internal

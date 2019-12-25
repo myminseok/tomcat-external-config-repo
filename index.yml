@@ -1,0 +1,2 @@
+1.0.0_myapp: http://tomcat-external-config-repo.apps.internal:8080/myapp/myapp.tar
+1.0.0_myapp2: http://tomcat-external-config-repo.apps.internal:8080/myapp2/myapp2.tar
